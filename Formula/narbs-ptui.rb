@@ -7,6 +7,7 @@ class NarbsPtui < Formula
 
   depends_on "rust" => :build
   depends_on "nasm" => :build
+  depends_on "cmake" => :build
   depends_on "chafa"
   depends_on "imagemagick"
 
