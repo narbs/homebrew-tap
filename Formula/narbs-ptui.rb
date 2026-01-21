@@ -5,8 +5,8 @@ class NarbsPtui < Formula
   sha256 "024ad0804cc773bb7c0d4adf05a0c0bba1da77011247687992376a8068e5706a"
   license "MIT"
 
-  depends_on "nasm" => :build
   depends_on "cmake" => :build
+  depends_on "nasm" => :build
   depends_on "rust" => :build
   depends_on "chafa"
   depends_on "imagemagick"
