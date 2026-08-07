@@ -1,8 +1,8 @@
 class NarbsPtui < Formula
   desc "PTUI"
   homepage "https://github.com/narbs/ptui"
-  url "https://github.com/narbs/ptui/archive/refs/tags/v2.2.4.tar.gz"
-  sha256 "abbbd4d6ef04b35f36a73048563e4e3ea2d7e902c77a9b4db9eb46854cab355e"
+  url "https://github.com/narbs/ptui/archive/refs/tags/v2.3.0.tar.gz"
+  sha256 "69fc0bd6bef7ee53d63f9305d80fcdc6696d0b8d8e5d50c9fdb4df014767a3be"
   license "MIT"
 
   depends_on "cmake" => :build
