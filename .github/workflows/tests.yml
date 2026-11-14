@@ -14,8 +14,11 @@ jobs:
       # Let each OS report on its own; a Linux failure used to cancel the macOS jobs
       # before they had run, hiding whether they passed.
       fail-fast: false
+      # No Intel macOS job: Homebrew no longer bottles for Intel macOS, so test-bot skips
+      # narbs-ptui there (its build dependencies have no Intel bottles) and the job would
+      # pass without testing anything. Intel Macs can still install from source.
       matrix:
-        os: [ macos-15-intel, macos-26 ]
+        os: [ macos-26 ]
         include:
           # Linux runs in Homebrew's own image, as `brew tap-new` sets up, so the host's
           # glibc never falls below what Homebrew supports (ubuntu-22.04's 2.35 did,
