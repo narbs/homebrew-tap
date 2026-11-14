@@ -10,7 +10,12 @@ class NarbsPtui < Formula
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
   depends_on "chafa"
+  depends_on "glib"
   depends_on "imagemagick"
+
+  on_macos do
+    depends_on "gettext"
+  end
 
   def install
     system "cargo", "install", "--features", "fast-jpeg", *std_cargo_args
